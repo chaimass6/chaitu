@@ -20,3 +20,14 @@ gsap.to(".lpage", {
     delay: 4,
     ease: "power2.out"
 });
+// Wait for the logo animation to complete, then redirect
+gsap.to("#svg", {
+    strokeDashoffset: 0,
+    duration: 5,  // Adjust based on your animation duration
+    onComplete: function() {
+        setTimeout(() => {
+            window.location.href = ""; // Change 'main.html' to your actual main page filename
+        }, 1000); // Adjust delay if needed
+    }
+});
+
