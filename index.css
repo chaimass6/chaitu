@@ -4,7 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lpage {
+    text-align: center;
+}
+svg {
+    display: block;
+    margin: 0 auto;
+}
 body {
     font-family: sans-serif;
     height: 100vh;
@@ -62,7 +75,7 @@ nav.visible {
     color: #fdf6e3;
     font-weight: bold;
     font-size: 50px;
-    padding-left: 20px;
+    padding-left: 25px;
     letter-spacing: 10px;
     text-align: center;
 }
