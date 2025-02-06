@@ -11,19 +11,7 @@ body {
     background: linear-gradient(to bottom right, #000000, #013b4a, #007f5f);
      background-attachment: fixed; 
     /* overflow: hidden; */
-/*     
 
-
-    top: 0;
-    width: 100%;
-    background: rgba(34, 81, 80, 0.8);
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease-in-out; */
 }
 
 nav ul {
@@ -61,8 +49,8 @@ nav.visible {
 }
 
 #svg {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     stroke: #fdf6e3;
     fill-opacity: 0;
     stroke-width: 5px;
@@ -73,7 +61,7 @@ nav.visible {
     padding-top: 10%;
     color: #fdf6e3;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 50px;
     padding-left: 20px;
     letter-spacing: 10px;
     text-align: center;
