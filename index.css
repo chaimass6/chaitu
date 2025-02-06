@@ -1,65 +1,34 @@
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body, html {
     height: 100%;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.lpage {
-    text-align: center;
-}
-svg {
-    display: block;
-    margin: 0 auto;
-}
-body {
-    font-family: sans-serif;
-    height: 100vh;
     background: linear-gradient(to bottom right, #000000, #013b4a, #007f5f);
-     background-attachment: fixed; 
-    /* overflow: hidden; */
-
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-nav.visible {
-    opacity: 1;
-    pointer-events: auto;
-} */
-
+/* Main Page Container */
 .lpage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    flex-direction: column;
-    background-attachment: fixed; 
+    width: 100%;
+    height: 100%;
     gap: 1.5rem;
-    background: linear-gradient(to bottom right, #000000, #2c2c54); /* Loading background gradient */
+    text-align: center;
+    /* background: linear-gradient(to bottom right, #000000, #2c2c54); */
 }
 
+/* SVG Logo Styling */
 #svg {
     height: 300px;
     width: 300px;
@@ -69,33 +38,31 @@ nav.visible {
     stroke-dasharray: 4500;
 }
 
+/* Logo Text Styling */
 .logoname {
-    padding-top: 10%;
     color: #fdf6e3;
-    font-weight: bold;
     font-size: 50px;
-    padding-left: 25px;
+    font-weight: bold;
     letter-spacing: 10px;
     text-align: center;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    /* text-shadow: 0px 0px 7px #eae3b9; */
+    padding-left: 15px;
 }
 
 .logoname:hover {
     color: #ff4500;
-    text-shadow: 0px 0px 10px #ebd972;
+    text-shadow: 0px 0px 15px #ebd972;
 }
-.main p{
+
+/* Additional Text (Optional) */
+/* 
+.main p {
     position: absolute;
     padding-top: 250px;
     text-align: center;
     font-size: 450px;
     color: #fdf6e3;
-    -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: rgb(19, 201, 201);
+    -webkit-text-stroke: 2px rgb(19, 201, 201);
     text-shadow: 0px 0px 50px rgb(68, 61, 61);
-}
-/* footer{
-    position: absolute;
-    background: none;
-    color: burlywood;
-    size: 50px;
 } */
