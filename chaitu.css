@@ -33,7 +33,7 @@ section{
     left:0;
     width: 100%;
     padding: 2rem 9%;
-    background: linear-gradient(to bottom right, #000000, #013b4a, #007f5f);
+    /* background: linear-gradient(to bottom right, #000000, #013b4a, #007f5f); */
     z-index: 1000;
     display: flex;
     justify-content: space-between;
