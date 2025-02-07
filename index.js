@@ -23,7 +23,7 @@ gsap.to(".lpage", {
 // Wait for the logo animation to complete, then redirect
 gsap.to("#svg", {
     strokeDashoffset: 0,
-    duration: 5,  // Adjust based on your animation duration
+    duration: 4.1,  // Adjust based on your animation duration
     onComplete: function() {
         setTimeout(() => {
             window.location.href = "chaitu.html"; // Change 'main.html' to your actual main page filename
