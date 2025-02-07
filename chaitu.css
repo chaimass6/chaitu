@@ -20,7 +20,7 @@ html{
     overflow-x:hidden;
 }
 body{
-     background-color: var(--bg-color);
+    background: linear-gradient(to bottom right, #000000, #013b4a, #007f5f);
     color: var(--text-color);
 }
 section{
