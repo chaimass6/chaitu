@@ -28,7 +28,7 @@ section{
     padding: fixed;
 }
 .header{
-    position: fixed;
+    /* position: fixed; */
     top:0;
     left:0;
     width: 100%;
@@ -54,4 +54,9 @@ section{
 .navbar a:hover,
 .navbar a.active{
     color: var(--text-color);
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
