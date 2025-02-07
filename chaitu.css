@@ -21,6 +21,7 @@ html{
 }
 body{
     background: linear-gradient(to bottom right, #000000, #013b4a, #007f5f);
+    background-attachment: fixed;
     color: var(--text-color);
 }
 section{
@@ -59,4 +60,13 @@ img{
     width: 50%;
     height: 50%;
     object-fit: cover;
+}
+.a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: xx-large;
+    
 }
