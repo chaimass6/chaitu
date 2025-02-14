@@ -18,13 +18,13 @@ gsap.to(".lpage", {
     delay: 3,
     ease: "power4.out"
  });
-// gsap.to("#svg", {
-//     strokeDashoffset: 0,
-//     duration: 4.1,  
-//     onComplete: function() {
-//         setTimeout(() => {
-//             window.location.href = "chaitu.html"; // Change 'main.html' to your actual main page filename
-//         }, 1000); // Adjust delay if needed
-//     }
-// });
+gsap.to("#svg", {
+    strokeDashoffset: 0,
+    duration: 4.1,  
+    onComplete: function() {
+        setTimeout(() => {
+            window.location.href = "chaitu.html"; // Change 'main.html' to your actual main page filename
+        }, 1000); // Adjust delay if needed
+    }
+});
 
