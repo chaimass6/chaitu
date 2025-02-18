@@ -84,6 +84,27 @@ nav{
     border: none;
     cursor: pointer;
   }
+  .navbar {
+    display: flex;
+    align-items: center;
+    /* Remove justify-content: center; so that the children can naturally align */
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  /* Push the toggle button to the right */
+  #mode-toggle {
+    margin-left: auto;
+    background: transparent; /* keep background transparent */
+    border: none;
+    font-size: 2rem; /* adjust icon size as needed */
+    cursor: pointer;
+    color: var(--text-color);
+  }
+  
 #menu-btn{
     font-size: 3.6rem;
     color: var(--text-color);
@@ -186,6 +207,10 @@ span{
     gap: 2rem;
     background: var(--snd-bf-color);
 
+}
+.a-content h3{
+    color: var(--text-color);
+    font-size: 3.2rem;
 }
 .a-img img{
     width: 35vw;
