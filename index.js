@@ -8,7 +8,7 @@ gsap.fromTo("#svg", { strokeDashoffset: 4500 }, {
 gsap.fromTo("#logoText", { opacity: 0 }, {
     opacity: 1,
     duration: 5,
-    delay: 3,
+    delay: 2,
     ease: "power4.out"
 });
 // Hide Loading Page Animation
