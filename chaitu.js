@@ -38,7 +38,34 @@ document.addEventListener("DOMContentLoaded", function () {
             this.classList.add("active");
         });
     });
-
-
     activateLink();
+});
+// Define your dark and light mode color schemes
+const darkMode = {
+  bg: "#000000",    // dark background
+  main: "#834bc4"   // accent color
+};
+
+const lightMode = {
+  bg: "#6500c4",    // swapped background for light mode
+  main: "#000000"   // swapped main color for light mode
+};
+
+let isDarkMode = true; // Start with dark mode
+
+document.getElementById("mode-toggle").addEventListener("click", function() {
+  const root = document.documentElement;
+  if (isDarkMode) {
+    // Switch to light mode
+    root.style.setProperty("--bg-color", lightMode.bg);
+    root.style.setProperty("--main-color", lightMode.main);
+    this.textContent = "Dark Mode";
+    isDarkMode = false;
+  } else {
+    // Switch back to dark mode
+    root.style.setProperty("--bg-color", darkMode.bg);
+    root.style.setProperty("--main-color", darkMode.main);
+    this.textContent = "Light Mode";
+    isDarkMode = true;
+  }
 });
