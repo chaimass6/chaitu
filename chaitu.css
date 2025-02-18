@@ -20,10 +20,12 @@ html{
     font-size:62.5% ;
     overflow-x:hidden;
     scroll-behavior:smooth;
-}
+}f
 body{
      background-color: var(--bg-color);
     color: var(--text-color);
+    animation-name: zaff;
+    animation-duration: 3s;
 }
 section{
     min-height: 100vh;
@@ -34,7 +36,7 @@ header.header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1.5rem 9%;
     background: var(--bg-color);
     display: flex;
     align-items: center;
@@ -213,12 +215,91 @@ span{
 .heading{
     text-align: center;
     font-size: 4.5rem;
-
 }
 .a-content p{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+/* ---------- Profiles Section ---------- */
+.profiles {
+    
+    padding: 2rem 5%;
+    background: var(--bg-color);
+    overflow: hidden;
+  }
+  
+  .profsec {
+    position: relative;
+    padding: 1%;
+    margin: 0 -20px; /* adjust margins if needed */
+    min-height: 400px;
+  }
+  
+  /* Container for the marquee items */
+  .profiles-container {
+    display: flex;
+    gap: 20px;
+    /* Set a fixed height if needed; here it matches the platform height plus extra spacing */
+    height: 500px;
+    /* width: max-content lets it expand based on its children */
+    width: max-content;
+    cursor: pointer;
+  }
+  
+  /* Apply the marquee animation when in view */
+  .profiles-container.in-view {
+    animation: marquee 15s linear infinite;
+  }
+  
+  /* Pause animation on hover */
+  .profiles-container:hover {
+    animation-play-state: paused;
+  }
+
+  .profiles .heading{
+    margin: 100px;
+  }
+  
+  /* Platform Card Styling */
+  .platform {
+    background-color: var(--snd-bf-color);
+    color: #fff;
+    opacity: 0.9;
+    border-radius: 20px;
+    /* padding-left: 50px; */
+    min-width: 300px;
+    height: 370px;
+    margin: auto 20px;
+    border: 3px solid var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: medium;
+  }
+  
+  .platform:hover {
+    box-shadow: 1px 1px 40px rgb(142, 8, 251);
+  }
+  
+  /* Optional: Improve the headings inside the platform */
+  .platform h4 {
+    margin: 10px 0;
+  }
+  
+  /* ---------- Marquee Keyframes ---------- */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* Translate by 50% of the total width.
+         Ensure that the cloned items create a seamless loop.
+         Adjust this value if needed (e.g., translateX(-50%) assumes the duplicate exactly doubles the width) */
+      transform: translateX(-50%);
+    }
+  }
+  
 .services h2{
     margin-bottom: 5rem;
     text-align: center;
