@@ -71,7 +71,6 @@ nav{
 .navbar a:hover{ 
     border: 2px solid var(--main-color);   
 }
-
 .nav-links {
     display: flex;
     align-items: center;
