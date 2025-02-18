@@ -31,19 +31,127 @@ section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
-header.header {
+/* -------------------------
+   Header & Navbar
+------------------------- */
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 9%;
+    padding: 2rem 9%;
     background: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    transition: 0.5s ease;
   }
   
+  /* Logo */
+  .logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+  /* Navbar Container */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* Navigation Link Styling */
+  .nav-links a {
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    background: var(--bg-color);
+    color: var(--main-color);
+    transition: 0.5s ease;
+    margin: 0.5rem;
+  }
+  
+  .nav-links a.active
+   {
+    background: var(--main-color);
+    color: var(--bg-color);
+  }
+  .nav-links a:hover{
+    border: 2px solid var(--main-color);
+  }
+  
+  /* Dark/Light Mode Toggle Button */
+  #mode-toggle {
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-color);
+    margin-left: 2rem;
+    background: transparent;
+  }
+  
+  /* Menu Icon (Bars / Times) */
+  #menu-btn {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none; /* Shown only on mobile */
+    cursor: pointer;
+  }
+  
+  /* -------------------------
+     Mobile Styles
+  ------------------------- */
+  @media (max-width: 768px) {
+    /* Show the menu icon */
+    #menu-btn {
+      display: block;
+    }
+    /* Hide nav links by default on mobile */
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: var(--bg-color);
+      flex-direction: column;
+      display: none;
+    }
+    /* When navbar has 'active' class, show the nav links */
+    .navbar.active .nav-links {
+      display: flex;
+    }
+    /* Optionally, adjust nav links styling for mobile */
+    .nav-links a {
+      margin: 1rem 0;
+      text-align: center;
+    }
+  }
+  @media (max-width:768px) {
+    #menu-btn {
+      display: block;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      /* additional mobile styling */
+    }
+    .navbar.active .nav-links {
+      display: block;
+    }
+  }
+    
+
   /* Logo Styling */
   .logo {
     font-size: 2.5rem;
@@ -92,7 +200,7 @@ header.header {
   /* Dark/Light Mode Toggle Button */
   /* This button is placed after the navigation links via flex ordering */
   #mode-toggle {
-    background: transparent;
+    
     border: none;
     font-size: 2rem;  /* Adjust icon size as needed */
     cursor: pointer;
@@ -500,13 +608,13 @@ span{
     .header{
         padding: 2rem 3%;
     }
-    section{
+    .section{
         padding: 10rem 3%;
     }
     .services {
         padding: 7rem;
     }
-    .portfolio{
+    .porjects{
         padding-bottom: 7rem;
     }
     .contact {
