@@ -24,7 +24,7 @@ gsap.to("#svg", {
     duration: 3.5,  
     onComplete: function() {
         setTimeout(() => {
-            window.location.href = "chaitu.html"; // Change 'main.html' to your actual main page filename
+            window.location.href = "chaitu.html"; 
         }, 1000); // Adjust delay if needed
     }
 });
