@@ -13,7 +13,7 @@ body, html {
     font-family: 'Poppins', sans-serif;
     background-attachment: fixed;
 }
-/* Main Page Container */
+
 .lpage {
     display: flex;
     flex-direction: column;
