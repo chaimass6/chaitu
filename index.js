@@ -4,7 +4,6 @@ gsap.fromTo("#svg", { strokeDashoffset: 4500 }, {
     duration: 5,
     ease: "power4.inOut"
 });
-
 // Fade-in Text Animation
 gsap.fromTo("#logoText", { opacity: 0 }, {
     opacity: 1,
