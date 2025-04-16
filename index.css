@@ -54,3 +54,18 @@ body, html {
 }
 
  
+.logoname {
+    font-size: clamp(30px, 5vw, 60px);
+}
+@keyframes glow {
+    0%, 100% {
+        filter: drop-shadow(0 0 2px #000000);
+    }
+    50% {
+        filter: drop-shadow(0 0 8px #997b2a);
+    }
+}
+
+#svg {
+    animation: glow 4s ease-in-out infinite;
+}
