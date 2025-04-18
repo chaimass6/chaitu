@@ -23,7 +23,7 @@ gsap.to("#svg", {
     duration: 3.5,  
     onComplete: function() {
         setTimeout(() => {
-            window.location.href = "chaitu.html"; 
+            window.location.href = "index.html"; 
         }, 1000); // Adjust delay if needed
     }
 });
