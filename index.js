@@ -11,7 +11,7 @@ gsap.fromTo("#logoText", { opacity: 0 }, {
     delay: 2,
     ease: "power4.out"
 });
-// Hide Loading Page Animation 
+
 gsap.to(".lpage", {
     opacity: 0,
     duration: 3,
