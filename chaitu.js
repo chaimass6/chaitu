@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.navbar a[href="#home"]').classList.add("active");
       }
     }
-  
+
+
+    
     // Listen for scroll event
     window.addEventListener("scroll", activateLink);
   
