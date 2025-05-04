@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
         let sectionHeight = section.offsetHeight;
         let sectionTop = section.offsetTop - 50;
         let sectionId = section.getAttribute("id");
-
           
         if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
           navLinks.forEach((link) => {
