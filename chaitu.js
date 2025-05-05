@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       sections.forEach((section) => {
         let sectionHeight = section.offsetHeight;
         let sectionTop = section.offsetTop - 50;
-        let sectionId = section.getAttribute("id");
-          
+        let sectionId = section.getAttribute("id")
         if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
           navLinks.forEach((link) => {
             link.classList.remove("active");
