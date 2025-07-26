@@ -4,7 +4,7 @@ gsap.fromTo("#svg", { strokeDashoffset: 4500 }, {
     duration: 5,
     ease: "power4.inOut"
 });
-// kkk
+// fade in
 gsap.fromTo("#logoText", { opacity: 0 }, {
     opacity: 1,
     duration: 5,
