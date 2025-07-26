@@ -11,7 +11,8 @@ gsap.fromTo("#logoText", { opacity: 0 }, {
     delay: 2,
     ease: "power4.out"
 });
-// Hide Loading Page A
+// Hide Loading 
+
 
 gsap.to(".lpage", {
     opacity: 0,
