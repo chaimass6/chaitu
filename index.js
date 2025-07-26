@@ -1,4 +1,4 @@
-// SVG Animation
+// SVG Animatio
 gsap.fromTo("#svg", { strokeDashoffset: 4500 }, {
     strokeDashoffset: 0,
     duration: 5,
