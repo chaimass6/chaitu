@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function activateLink() {
       let scrollY = window.scrollY;
       let activeSet = false;
+        
       sections.forEach((section) => {
         let sectionHeight = section.offsetHeight;
         let sectionTop = section.offsetTop - 50;
